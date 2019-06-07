@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.rest_account.HelloControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.403 s <<< FAILURE! - in com.example.rest_account.HelloControllerTest
+initializationError(com.example.rest_account.HelloControllerTest)  Time elapsed: 0.015 s  <<< ERROR!
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.test.context.web.WebDelegatingSmartContextLoader]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Failed to enable support for Groovy scripts; could not load class: org.springframework.test.context.web.GenericGroovyXmlWebContextLoader
+Caused by: java.lang.IllegalStateException: Failed to enable support for Groovy scripts; could not load class: org.springframework.test.context.web.GenericGroovyXmlWebContextLoader
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.test.context.web.GenericGroovyXmlWebContextLoader]: Unresolvable class definition; nested exception is java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContext
+
